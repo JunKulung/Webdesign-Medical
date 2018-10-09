@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,700,700i,800,800i,900,900i');
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	background-color: #1b8df0;
+	margin: 0%;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+
+.navbar a:hover {
+	border-bottom: 3px solid white;
+	transition: 0.2s;
+}
+
+.navbar li {
+	padding: 20px;
+}
+
+.navbar li:last-child {
+	margin-left: auto;
+}
+
+.jumbotron {
+	background-image: url(1.jpg);
+	background-size: cover;
+	height: 100%;
+}
+
+.jumbotron h1 {
+	color: #1b8df0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 80px;
+}
+
+.jumbotron .lead {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.nav-tabs {
+	font-family: 'Raleway', sans-serif;
+}
+
+.first {
+	letter-spacing: 1.5px;
+}
+
+.first h3,
+.third h3,
+.fifth h3 {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: -1px;
+	font-weight: 600;
+	color: #1b8df0;
+}
+
+.second {
+	margin-top: 25px;
+	background: #1b8df0;
+	color: white;
+	letter-spacing: 1.5px;
+}
+
+.second h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.col-lg-6 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.third {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	letter-spacing: 1.5px;
+}
+
+.card {
+	width: 18rem;
+}
+
+.fifth {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #373838;
+	letter-spacing: 1.5px;
+}
+
+footer p {
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+
+.content {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #1b8df0;
+	bottom: 0;
+	transition: 0.3s ease;
+	opacity: 0.7;
+}
+
+.content:hover .overlay {
+	height: 20%;
+}
+
+.text {
+	color: #fdfdfd;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.content:hover .text {
+	opacity: 1;
+}
+
+.content-img {
+	position: relative;
+	overflow: hidden;
+}
+
+.content-overlay {
+	position: absolute;
+	height: 17%;
+	width: 100%;
+	bottom: 0;
+	background-color: aliceblue;
+	opacity: 0.5;
+	text-align: center;
+	transition: 0.5s ease;
+}
+
+.content-overlay .head {
+	color: #1b8df0;
+}
+
+.content-overlay p {
+	color: black;
+	font-size: 18px;
+	text-align: justify;
+	padding: 0 25px;
+}
+
+.content-img:hover .content-overlay {
+	height: 100%;
+}
+
+.col-lg-6 {
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		flex-flow: column;
+		text-align: center;
+	}
+	.navbar li:last-child {
+		margin-right: auto;
+	}
+}
